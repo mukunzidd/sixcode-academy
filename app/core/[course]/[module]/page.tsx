@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { CoreSidebar } from '@/components/core-sidebar';
+import { CompletionMarker } from '@/components/completion-marker';
 import { LessonSubmission } from '@/components/lesson-submission';
 import { core } from '@/lib/data';
 import { getLesson } from '@/lib/lesson-details';
@@ -21,7 +22,7 @@ export default function ModulePage({ params }: { params: { course: string; modul
     <article className="min-w-0">
       <Link href={`/core/${course.slug}/`} className="font-mono text-xs text-coral">← {course.title}</Link>
       <p className="eyebrow mt-10 text-coral">Module {String(index + 1).padStart(2, '0')} / one-week sprint</p>
-      <h1 className="mt-4 max-w-4xl text-5xl font-black leading-[.9] tracking-[-.07em] md:text-7xl">{module}</h1>
+      <div className="mt-4 flex flex-wrap items-end justify-between gap-5"><h1 className="max-w-4xl text-5xl font-black leading-[.9] tracking-[-.07em] md:text-7xl">{module}</h1><CompletionMarker id={`lesson:${course.slug}:${index}`} label="lesson" /></div>
       <p className="mt-8 max-w-3xl text-xl leading-8 text-muted">{lesson.intro}</p>
       <div className="mt-12 grid gap-10 xl:grid-cols-[1fr_300px]">
         <div className="space-y-12">
