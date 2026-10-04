@@ -13,7 +13,7 @@ SixCode Academy is a mentor-led program for 30–50 developer trainees.
 - Daily and weekly check-ins
 - Learner-owned progress tracking
 
-The core covers web and workstation basics, UI and UX foundations, JavaScript, systems and data, and working with others. Learners then choose Full-Stack JavaScript and TypeScript, Ruby and Rails, or Mobile with React Native and TypeScript.
+The core covers web and workstation basics, UI and UX foundations, JavaScript, systems and data, and working with others. Learners then choose Full-Stack JavaScript and TypeScript, Mobile with React Native and TypeScript, or DevOps and Cloud Operations.
 
 Every track ends with a personal capstone and a four-week team product. Teams choose the problem, design the flow in Figma, write the technical documents, and build the product. Mentors who are SixCode engineers help the team shape scope, make technical decisions, and review the work.
 
