@@ -8,6 +8,7 @@ export const core: Course[] = [
 ];
 export type TrackUnit = { slug: string; title: string; summary: string; lessons: string[]; project: string };
 export type Track = { slug: string; title: string; duration: string; tone: string; courses: string[]; outcomes: string[]; units: TrackUnit[]; capstone: string };
+export function slugify(value: string) { return value.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, ''); }
 
 export const tracks: Track[] = [
   { slug: 'full-stack-javascript', title: 'Full-Stack JavaScript + TypeScript', duration: '8 weeks + 4-week team build', tone: 'Browser to backend, typed contracts, and production habits.', courses: ['Intermediate HTML and CSS', 'JavaScript and browser programming', 'Advanced HTML and CSS', 'React and TypeScript', 'Databases and SQL', 'Node services and APIs', 'Professional delivery'], outcomes: ['Build a typed React application from a product brief.', 'Design and consume a Node API with a relational data model.', 'Ship tested, documented work that another engineer can run.'], units: [
