@@ -5,19 +5,19 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ink: '#182027',
-        paper: '#f4f0e7',
-        line: '#c9c4b8',
-        coral: '#ee6a4c',
-        blue: '#4268d6',
-        panel: '#fbf8f0',
+        ink: 'rgb(var(--six-ink) / <alpha-value>)',
+        paper: 'rgb(var(--six-paper) / <alpha-value>)',
+        line: 'rgb(var(--six-line) / <alpha-value>)',
+        coral: 'rgb(var(--six-accent) / <alpha-value>)',
+        blue: '#7fc0ac',
+        panel: 'rgb(var(--six-panel) / <alpha-value>)',
       },
       fontFamily: {
         sans: ['Arial', 'Helvetica', 'sans-serif'],
         mono: ['"Courier New"', 'monospace'],
       },
       boxShadow: {
-        offset: '8px 8px 0 #182027',
+        offset: '8px 8px 0 rgb(var(--six-ink) / 1)',
       },
     },
   },
